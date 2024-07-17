@@ -78,7 +78,7 @@ class Apple(pygame.sprite.Sprite):
     def __init__(self):
         super(Apple, self).__init__()
         self.surf = pygame.Surface((SEGMENT_SIZE, SEGMENT_SIZE))
-        self.surf.fill((255, 0, 0))  # Change color to red for better visibility
+        self.surf.fill((255, 0, 0))  # Change color of apple to red
         self.rect = self.surf.get_rect()
         self.spawn_in_safe_zone()
 
@@ -198,7 +198,7 @@ while running:
     # Update the display
     pygame.display.flip()
 
-    # Ensure program maintains a rate of 3 frames per second
+    # Ensure program maintains a rate of 3 frames per second (determines speed of snake)
     clock.tick(3)
 
 # Display game over screen
